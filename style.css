@@ -1,0 +1,148 @@
+body {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* วีดีโอพื้นหลัง */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: rgba(24, 24, 24, 0.8); /* ใส่ความโปร่งใส */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+header img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cart-btn {
+    background-color: #00e676;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cart-btn:hover {
+    background-color: #fafafa;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #00e676;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.product-item {
+    background-color: rgba(24, 24, 24, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.product-item:hover {
+    transform: scale(1.08);
+    background-color: rgba(34, 34, 34, 0.8);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.pagination a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.pagination a:hover {
+    background-color: #00e676;
+    color: #0d0d0d;
+}
+
+/* เพิ่มสีขาวให้กับข้อความในกรอบ */
+.product-item p {
+    color: white;
+}
+
+/* เพิ่มสีขาวให้กับคำว่า "เลือกประเภทสินค้า:" */
+form label {
+    color: white;
+}
+
+/* เปลี่ยนสีข้อความในกรอบให้เป็นสีขาว */
+.product-grid {
+    color: white;
+}
+
+/* เปลี่ยนสีข้อความใน label และ p ให้เป็นสีขาว */
+.form-group label, .form-group p {
+    color: white;
+}
+
+/* เปลี่ยนสีพื้นหลังของปุ่ม */
+.btn-primary {
+    background-color: #004D40;  /* สีพื้นหลัง (ตัวอย่างสีส้ม) */
+    border-color: #ff5733;  /* สีขอบของปุ่ม */
+}
+
+/* เปลี่ยนสีข้อความในปุ่ม */
+.btn-primary:hover {
+    color: white;  /* สีข้อความเมื่อ hover */
+}
+
+/* เปลี่ยนสีพื้นหลังของปุ่มเมื่อ hover */
+.btn-primary:focus, .btn-primary:active {
+    background-color: #464646;  /* สีพื้นหลังเมื่อคลิกหรือ focus (ตัวอย่างสีเข้มกว่า) */
+    border-color: #c4411e;
+}
+
